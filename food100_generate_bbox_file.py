@@ -61,7 +61,7 @@ def generate_bbox_file(datapath, labelpath, classid, classname):
             img_bbox = line.strip('\n').split(' ')
             if img_bbox[0] != 'img':
                 img_bbox_filename = os.path.join(dataDir, img_bbox[0]+'.txt')
-                print(f"img_bbox_filename: {limg_bbox_filename}")
+                print(f"img_bbox_filename: {img_bbox_filename}")
                 with open(img_bbox_filename, 'w') as f:
                     # [number of bbox]
                     # [left X] [top Y] [right X] [bottom Y] [class name]
