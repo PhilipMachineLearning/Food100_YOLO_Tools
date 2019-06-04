@@ -76,7 +76,7 @@ def generate_bbox_file(datapath, labelpath, classid, classname):
 
                 image_filename = os.path.join(dataDir, img_bbox[0]+'.jpg')
                 yolo_label_filename = os.path.join(labelDir, img_bbox[0]+'.txt')
-                print(f"Current yolo_label_filename: {yolo_label_filename}"
+                print(f"Current yolo_label_filename: {yolo_label_filename}")
                 with open(yolo_label_filename, 'w') as f:
                     img = Image.open(image_filename)
                     yolo_bbox = convert_yolo_bbox(img.size, img_bbox)
