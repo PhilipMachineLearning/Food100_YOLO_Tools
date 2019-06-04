@@ -16,10 +16,10 @@
 #   Purpose: Label object bboxes for ImageNet Detection data
 #   Author:  Qiushi 06/06/2014
 #
+from __future__ import division
 # Dont use Xwindows backend
 import matplotlib
 matplotlib.use('Agg')
-from __future__ import division
 #from Tkinter import *
 import tkinter as ttk
 #import tkMessageBox
