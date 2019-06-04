@@ -18,7 +18,7 @@
 #
 from __future__ import division
 #from Tkinter import *
-import tkinter as tk
+import tkinter as ttk
 #import tkMessageBox
 import tkinter
 import tkinter.messagebox
