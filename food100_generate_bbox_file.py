@@ -13,15 +13,23 @@
 
 import os
 from PIL import Image
+from pathlib import Path
 
 # modify the directories and class file to fit
 #datapath = 'data/food100'
 #labelpath = 'data/labels'
 #classfilename = 'data/food100/food100.names'
 
-datapath = 'images'
-labelpath = 'labels'
-classfilename = 'food100.names'
+#datapath = 'images'
+#labelpath = 'labels'
+#classfilename = 'food100.names'
+
+from pathlib import Path
+
+datapath = str(Path.cwd().resolve() / 'images')
+labelpath = str(Path.cwd().parent.resolve() / 'data' /  'labels')
+classfilename = str(Path.cwd().resolve() / 'food100.names')
+
 
 def convert_yolo_bbox(img_size, box):
     # img_bbox file is [0:img] [1:left X] [2:bottom Y] [3:right X] [4:top Y]
