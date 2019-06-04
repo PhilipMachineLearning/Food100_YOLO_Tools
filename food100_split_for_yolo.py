@@ -22,8 +22,11 @@ path_data = str(Path.cwd().parent.resolve() / 'data' / 'food100')
 percentage_test = 10;
 
 # Create and/or truncate train.txt and test.txt
-file_train = open('train.txt', 'w')
-file_test = open('test.txt', 'w')
+#file_train = open('train.txt', 'w')
+#file_test = open('test.txt', 'w')
+
+file_train = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'train.txt')
+file_test = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'test.txt')
 
 # Populate train.txt and test.txt
 counter = 1
