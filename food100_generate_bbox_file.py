@@ -50,14 +50,18 @@ def generate_bbox_file(datapath, labelpath, classid, classname):
     dataDir = os.path.join(datapath, str(classid))
     labelDir = os.path.join(labelpath, str(classid))
     bb_filename = os.path.join(dataDir, 'bb_info.txt')
+    print(f"Label directory path: {labelDir}")
     if not os.path.exists(labelDir):
         os.makedirs(labelDir)
+        print("Path does not exist")
+        print(f"Creating label directory: {labelDir}")
     with open(bb_filename) as fp:
         for line in fp.readlines():
             # img_bbox file is [0:img] [1:left X] [2:bottom Y] [3:right X] [4:top Y]
             img_bbox = line.strip('\n').split(' ')
             if img_bbox[0] != 'img':
                 img_bbox_filename = os.path.join(dataDir, img_bbox[0]+'.txt')
+                print(f"img_bbox_filename: {limg_bbox_filename}")
                 with open(img_bbox_filename, 'w') as f:
                     # [number of bbox]
                     # [left X] [top Y] [right X] [bottom Y] [class name]
