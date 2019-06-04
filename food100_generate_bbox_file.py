@@ -30,6 +30,10 @@ datapath = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'images')
 labelpath = str(Path.cwd().parent.resolve() / 'data' /  'labels')
 classfilename = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'food100.names')
 
+print(f"datapath: {datapath}")
+print(f"labelpath: {labelpath}")
+print(f"classfilename: {classfilename}")
+
 
 def convert_yolo_bbox(img_size, box):
     # img_bbox file is [0:img] [1:left X] [2:bottom Y] [3:right X] [4:top Y]
@@ -47,6 +51,7 @@ def convert_yolo_bbox(img_size, box):
     return (x,y,w,h)
 
 def generate_bbox_file(datapath, labelpath, classid, classname):
+    print("Entering method: generate bbox file")
     dataDir = os.path.join(datapath, str(classid))
     labelDir = os.path.join(labelpath, str(classid))
     bb_filename = os.path.join(dataDir, 'bb_info.txt')
