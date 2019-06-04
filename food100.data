@@ -1,5 +1,5 @@
 classes= 100
-train  = /content/data/food100/train.txt  
-valid  = /content/data/food100/test.txt  
-names = /content/data/food100/food100.names  
+train  = /content/darknet/Food100_YOLO_Tools/train.txt  
+valid  = /content/darknet/Food100_YOLO_Tools/test.txt  
+names = /content/darknet/Food100_YOLO_Tools/food100.names  
 backup = backup
