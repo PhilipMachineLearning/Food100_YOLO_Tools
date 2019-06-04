@@ -343,7 +343,8 @@ class LabelTool():
 ##        self.mainPanel.create_image(0, 0, image = self.tkimg, anchor=NW)
 
 if __name__ == '__main__':
-    root = Tk()
+    #root = Tk()
+    root = ttk.Tk()
     tool = LabelTool(root)
     root.resizable(width =  True, height = True)
     root.mainloop()
