@@ -27,6 +27,9 @@ from PIL import Image, ImageTk
 import os
 import glob
 import random
+# Dont use Xwindows backend
+import matplotlib
+matplotlib.use('Agg')
 
 # colors for the bboxes
 COLORS = ['red', 'blue', 'olive', 'teal', 'cyan', 'green', 'black']
