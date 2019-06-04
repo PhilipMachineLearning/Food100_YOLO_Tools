@@ -25,8 +25,8 @@ percentage_test = 10;
 #file_train = open('train.txt', 'w')
 #file_test = open('test.txt', 'w')
 
-file_train = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'train.txt')
-file_test = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'test.txt')
+file_train = open(str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'train.txt'), 'w')
+file_test = open(str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'test.txt'), 'w')
 
 print(f"file_train path: {file_train}")
 print(f"file_train path: {file_test}")
