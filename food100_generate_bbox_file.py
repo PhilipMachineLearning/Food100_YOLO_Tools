@@ -27,7 +27,7 @@ from pathlib import Path
 from pathlib import Path
 
 datapath = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'images')
-labelpath = str(Path.cwd().parent.resolve() / 'data' /  'labels')
+labelpath = str(Path.cwd().resolve() / 'data' /  'labels')
 classfilename = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'food100.names')
 
 print(f"datapath: {datapath}")
