@@ -23,7 +23,7 @@ import tkinter as tk
 import tkinter
 import tkinter.messagebox
 from PIL import Image, ImageTk
-import ttk
+#import ttk
 import os
 import glob
 import random
