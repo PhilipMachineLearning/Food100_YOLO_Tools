@@ -14,7 +14,8 @@ import glob, os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Directory where the data will reside, relative to 'darknet.exe'
-path_data = 'data/food100/'
+#path_data = 'data/food100/'
+path_data = str(Path.cwd().parent.resolve() / 'data' / 'food100')
 
 # Percentage of images to be used for the test set
 percentage_test = 10;
@@ -28,6 +29,7 @@ counter = 1
 index_test = round(100 / percentage_test)
 for pathAndFilename in glob.iglob(os.path.join(current_dir, "images/*/*.jpg")):
     title, ext = os.path.splitext(os.path.basename(pathAndFilename))
+    print(f"Path and File name: {pathAndFilename}") 
 
     if counter == index_test:
         counter = 1
