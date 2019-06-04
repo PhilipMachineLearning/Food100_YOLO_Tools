@@ -71,13 +71,16 @@ def generate_bbox_file(datapath, labelpath, classid, classname):
 
 classid = 0
 classid2name = {}
+print(f"Class file name: {classfilename}")
 if os.path.exists(classfilename):
     with open(classfilename) as cf:
         for line in cf.readlines():
             classname = line.strip('\n')
             classid = classid + 1
             classid2name[classid] = classname
-
+else:
+    print("File does not exist at path")
+            
 for id in classid2name.keys():
     print("generating %d %s" %(id, classid2name[id]))
     generate_bbox_file(datapath, labelpath, id, classid2name[id])
