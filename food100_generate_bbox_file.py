@@ -28,7 +28,7 @@ from pathlib import Path
 
 datapath = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'images')
 labelpath = str(Path.cwd().parent.resolve() / 'data' /  'labels')
-classfilename = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / food100.names')
+classfilename = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'food100.names')
 
 
 def convert_yolo_bbox(img_size, box):
