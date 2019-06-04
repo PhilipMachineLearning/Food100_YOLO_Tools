@@ -28,6 +28,9 @@ percentage_test = 10;
 file_train = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'train.txt')
 file_test = str(Path.cwd().resolve() / 'Food100_YOLO_Tools' / 'test.txt')
 
+print(f"file_train path: {file_train}")
+print(f"file_train path: {file_test}")
+
 # Populate train.txt and test.txt
 counter = 1
 index_test = round(100 / percentage_test)
