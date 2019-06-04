@@ -17,8 +17,11 @@
 #   Author:  Qiushi 06/06/2014
 #
 from __future__ import division
-from Tkinter import *
-import tkMessageBox
+#from Tkinter import *
+import tkinter as tk
+#import tkMessageBox
+import tkinter
+import tkinter.messagebox
 from PIL import Image, ImageTk
 import ttk
 import os
