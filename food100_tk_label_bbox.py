@@ -16,6 +16,9 @@
 #   Purpose: Label object bboxes for ImageNet Detection data
 #   Author:  Qiushi 06/06/2014
 #
+# Dont use Xwindows backend
+import matplotlib
+matplotlib.use('Agg')
 from __future__ import division
 #from Tkinter import *
 import tkinter as ttk
@@ -27,9 +30,7 @@ from PIL import Image, ImageTk
 import os
 import glob
 import random
-# Dont use Xwindows backend
-import matplotlib
-matplotlib.use('Agg')
+
 
 # colors for the bboxes
 COLORS = ['red', 'blue', 'olive', 'teal', 'cyan', 'green', 'black']
